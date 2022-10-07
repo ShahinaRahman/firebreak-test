@@ -11,27 +11,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>miller-columns examples</title>
+  <title>Topic taxonomy tags</title>
   <link rel="stylesheet" href="https://alphagov.github.io/miller-columns-element/dist/examples.css">
   <script src="https://unpkg.com/element-closest/browser"></script>
   <script src="https://unpkg.com/core-js-bundle/index.js"></script>
   <script src="https://unpkg.com/@webcomponents/custom-elements/custom-elements.min.js"></script>
+
+
+  <link rel="icon" type="image/x-icon" href="/assets/govuk_publishing_components/favicon-production-3d29621e53fc949f82338b9efeaeaa1a803066deef2e8e6b390c23d79c21c90b.png" />
+  <link rel="stylesheet" href="/assets/component_guide/application-af7e7e93d6edfc5dd118097c206903831c93c5178d955a87a2a67314ef34683d.css" media="screen" />
+  <link rel="stylesheet" href="/assets/component_guide/print-a92993ba03fa0b91fbdcf4f99101c88b0792795829b9ea076df1c59d2bd888cc.css" media="print" />
+  <script src="/assets/govuk_publishing_components/vendor/modernizr-a694b2e4420935261ee2a50f5702d93197f5207f75a24a6ecdae2bfea4a160a3.js"></script>
+
+<style>
+.feedback {
+  background-color: #1d70b8;
+  width: 800px;
+  height: 80px;
+padding: 10px;
+  margin: 20px
+  }
+
+button {
+  font: verdana;
+  font-size: 18px;
+	margin: 10px;
+	background-color: #1d70b8;
+    border:white;
+    color: white;
+    width: 100px;
+    height: 35px;
+    shadow: white;
+    box-shadow: 1px 1px 1px 1px #FFFFFF;
+    position:relative; left:265px; bottom:55px;
+    }
+
+</style>
+
 </head>
+
 <body class="govuk-template__body js-enabled">
   <script>
     document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
   </script>
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
-      <h1 class="govuk-heading-xl">miller-columns element</h1>
-      <p class="govuk-body">Express a hierarchy by showing selectable lists of the items in each hierarchy level.<br>Selection of any item shows that item’s children in the next list.</p>
-
+      <span class="govuk-caption-xl">Driving license review - call for evidence on <br>opportunities for changes to the driver licensing<br> regime</span>
+      <h1 class="govuk-heading-xl">Topic taxonomy tags</h1>
+      <p class="govuk-body">The topic taxonomy groups content based on what it's about.</p>
+      <p class="govuk-body">Choose the tag or tags that best describes what this content is about.</p>
+      <p class="govuk-body">You can use the whole topic taxonomy. There's no limit   to the number of tags you can choose.</p>
+<br>
+<br>
 
       <table class="govuk-table">
-      <caption class="govuk-table__caption govuk-table__caption--m">We believe your content is about these topics based on the title and description of your content</caption>
+      <caption class="govuk-table__caption govuk-table__caption--m">Content topics based on the title and description of your content</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
-        <th scope="col" class="govuk-table__header">Tags</th>
+
       </tr>
       </thead>
       <tbody class="govuk-table__body">
@@ -43,39 +80,43 @@
           <strong class="govuk-tag">completed</strong>
           <strong class="govuk-tag">completed</strong>
           <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
         </th>
       </tr>
       </tbody>
       </table>
+<br>
 
+  <div class="govuk-breadcrumbs">
+    <h2 class="govuk-heading-m">Suggested tags</h2>
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+      </li>
+    </ol>
+  </div>
 
+  <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+    </li>
+  </ol>
+</div>
 
-
-  <table class="govuk-table">
-    <caption class="govuk-table__caption govuk-table__caption--m">Recommended tags based on the title and description of your content</caption>
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th scope="col" class="govuk-table__header">Tags</th>
-      </tr>
-    </thead>
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-          <strong class="govuk-tag">completed</strong>
-        </th>
-      </tr>
-    </tbody>
-  </table>
-
+<br>
+<br>
 
 
       <h2 class="govuk-heading-m">Selected topics</h2>
@@ -8205,6 +8246,12 @@
 
 <div id="__vcbe" data-live="true"></div></body></html>
 
+<div class="feedback"><p style=" font-size:22px; color:white; margin-top:30px; margin-bottom:10px; margin-left:50px;">Is this page useful?</p>
+
+<button>Yes</button>
+<button>No</button>
+
+</div>
 
 
 
