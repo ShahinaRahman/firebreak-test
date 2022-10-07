@@ -573,7 +573,6 @@
         this.describedbyId = this.getAttribute('aria-describedby');
 
         var source = document.getElementById(this.getAttribute('for') || '');
-        console.log(this.getAttribute('for'))
         if (source) {
           this.taxonomy = new Taxonomy(Topic.fromList(source), this);
           this.renderTaxonomyColumn(this.taxonomy.topics, true);
@@ -637,7 +636,7 @@
         try {
           for (var _iterator7 = topics[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
             var topic = _step7.value;
-            
+
             this.renderTopic(topic, ul);
           }
         } catch (err) {
