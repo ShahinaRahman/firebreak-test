@@ -1,3 +1,30 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@ShahinaRahman
+alphagov
+/
+miller-columns-element
+Public
+Code
+Issues
+Pull requests
+Actions
+Security
+Insights
+miller-columns-element/dist/index.umd.js /
+@kevindew
+kevindew Recompile dist files
+Latest commit c8e6378 on 18 Aug 2020
+ History
+ 2 contributors
+@alex-ju@kevindew
+1121 lines (996 sloc)  35.4 KB
+
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['exports'], factory);
@@ -1119,3 +1146,18 @@
   exports.MillerColumnsElement = MillerColumnsElement;
   exports.MillerColumnsSelectedElement = MillerColumnsSelectedElement;
 });
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+miller-columns-element/index.umd.js at main · alphagov/miller-columns-element
