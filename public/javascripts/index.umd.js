@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@ShahinaRahman
-alphagov
-/
-miller-columns-element
-Public
-Code
-Issues
-Pull requests
-Actions
-Security
-Insights
-miller-columns-element/dist/index.umd.js /
-@kevindew
-kevindew Recompile dist files
-Latest commit c8e6378 on 18 Aug 2020
- History
- 2 contributors
-@alex-ju@kevindew
-1121 lines (996 sloc)  35.4 KB
-
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['exports'], factory);
@@ -600,6 +573,7 @@ Latest commit c8e6378 on 18 Aug 2020
         this.describedbyId = this.getAttribute('aria-describedby');
 
         var source = document.getElementById(this.getAttribute('for') || '');
+        console.log(this.getAttribute('for'))
         if (source) {
           this.taxonomy = new Taxonomy(Topic.fromList(source), this);
           this.renderTaxonomyColumn(this.taxonomy.topics, true);
@@ -663,7 +637,7 @@ Latest commit c8e6378 on 18 Aug 2020
         try {
           for (var _iterator7 = topics[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
             var topic = _step7.value;
-
+            
             this.renderTopic(topic, ul);
           }
         } catch (err) {
@@ -1146,18 +1120,3 @@ Latest commit c8e6378 on 18 Aug 2020
   exports.MillerColumnsElement = MillerColumnsElement;
   exports.MillerColumnsSelectedElement = MillerColumnsSelectedElement;
 });
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-miller-columns-element/index.umd.js at main · alphagov/miller-columns-element
